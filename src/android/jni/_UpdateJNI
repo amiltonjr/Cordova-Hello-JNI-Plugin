@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo Updating the JNI files...
+
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+
+eval cd ${DIR}/../
+export NDK_PROJECT_PATH=.
+ndk-build NDK_APPLICATION_MK=./jni/Android.mk
+
+echo Done
