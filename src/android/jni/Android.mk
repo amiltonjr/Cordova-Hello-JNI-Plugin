@@ -1,3 +1,4 @@
+APP_PLATFORM := android-23
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE := hello-jni
